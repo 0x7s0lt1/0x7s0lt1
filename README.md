@@ -1,2 +1,9 @@
-<img  src="https://ik.imagekit.io/lq3uy4twp3/cascade-layout-1024x434__2__ukUIl_Yio.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1654958339689"/>
 
+<ul>
+<li>
+    <a href="https://zsoltfehervari.xyz/">https://zsoltfehervari.xyz/</a>
+  </li>
+  <li>
+    <a href="https://ipfs.io/ipfs/QmaFhdmBq2mYMyKsmHsN1nvVgsg2okDcnhXXb8gXfETZcb">https://ipfs.io/ipfs/QmaFhdmBq2mYMyKsmHsN1nvVgsg2okDcnhXXb8gXfETZcb</a>
+  </li>
+<ul>
