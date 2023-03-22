@@ -80,7 +80,13 @@
             x.setAttribute('x2',ev.pageX);
             y.setAttribute('y1',ev.pageY);
             y.setAttribute('y2',ev.pageY);
-        })
+        });
+
+        document.querySelectorAll('span').forEach(span => {
+            span.addEventListener('click', () => {
+                span.style.color = "#" + Math.floor(Math.random()*16777215).toString(16);;
+            });
+        });
 
     </script>
 </body>
