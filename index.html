@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ZsoltFehervari</title>
+    <title>0x7s0lt1</title>
     <style>
 
         body {
@@ -54,37 +54,38 @@
     </svg> 
      
     <section>
-        <span>Z</span>
+        <span>0</span>
+        <span>x</span>
+        <span>7</span>
         <span>s</span>
-        <span>o</span>
+        <span>0</span>
         <span>l</span>
         <span>t</span>
-        <span>&nbsp;</span>
-        <span>F</span>
-        <span>e</span>
-        <span>h</span>
-        <span>e</span>
-        <span>r</span>
-        <span>v</span>
-        <span>a</span>
-        <span>r</span>
-        <span>i</span>
+        <span>1</span>
     </section>
     <script>
 
-        let x = document.getElementById('x');
-        let y = document.getElementById('y');
-
-        window.addEventListener('mousemove',(ev) =>{
+        const x = document.getElementById('x');
+        const y = document.getElementById('y');
+    
+        const onCursorMove = (ev) => {
             x.setAttribute('x1',ev.pageX);
             x.setAttribute('x2',ev.pageX);
             y.setAttribute('y1',ev.pageY);
             y.setAttribute('y2',ev.pageY);
+        };
+    
+        window.addEventListener('touchmove',(ev) =>{
+            onCursorMove(ev.touches[0]);
         });
-
+    
+        window.addEventListener('mousemove',(ev) =>{
+            onCursorMove(ev);
+        });
+    
         document.querySelectorAll('span').forEach(span => {
             span.addEventListener('click', () => {
-                span.style.color = "#" + Math.floor(Math.random()*16777215).toString(16);;
+                span.style.color = "#" + Math.floor(Math.random()*16777215).toString(16);
             });
         });
 
